@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Manrope:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", sans-serif;
+  --font-display: Manrope, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply m-0 min-w-80 bg-[#f5f3ed] font-sans text-[#232126] antialiased;
+  }
+
+  button {
+    font: inherit;
+  }
+
+  button:focus-visible {
+    @apply outline-2 outline-offset-2 outline-[#7d68c8];
+  }
+}
